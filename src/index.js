@@ -13,4 +13,6 @@ getUsers().then(result => {
         <td>${user.email}</td>
         </tr>`
     });
+
+    global.document.getElementById('users').innerHTML = usersBody;
 });
